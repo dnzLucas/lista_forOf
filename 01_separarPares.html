@@ -7,8 +7,19 @@
 
     //ENTRADA
 
+    let listaDeNumeros = [1, 4, 6, 8, 898, 7, 43, 2980, 3500, 10].sort((a,b) => a-b);
 
     //PROCESSAMENTO
+
+    let par = []
+    let impar = []
+
+    for (item of listaDeNumeros) {
+        (item % 2 == 0) ? par.push(item) : impar.push(item)
+    }
+
+    document.write(`Pares: ${par.join(", ")} <br> Ímpares: ${impar.join(", ")}`)
+
 
 
     //SAÍDA

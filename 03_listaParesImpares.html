@@ -7,9 +7,18 @@
 
     //ENTRADA
 
+    let listaDeNumeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];    
 
     //PROCESSAMENTO
 
+    let par = []
+    let impar = []
+
+    for (item of listaDeNumeros) {
+        (item % 2 == 0) ? par.push(item) : impar.push(item)
+    }
+
+    document.write(`Pares: ${par.join(", ")} <br> Ímpares: ${impar.join(", ")}`)
 
     //SAÍDA
 

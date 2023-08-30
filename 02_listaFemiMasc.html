@@ -7,7 +7,18 @@
 
     //ENTRADA
 
+    let listaDeNomes = ["João", "Maria", "José", "Amanda", "Beatriz", "Júlio", "Olívia"];    
+
     //PROCESSAMENTO
+    let m = [];
+    let f = [];
+
+    for (const genero of listaDeNomes) {
+        const sexo = prompt(`${genero} é masculino ou feminino (M ou F)`).toUpperCase();
+        (sexo == "M") ? m.push(genero) : f.push(genero);
+    }
+
+    document.write(`${m.join(", ")} <br> ${f.join(", ")}`);
 
     //SAÍDA
 
