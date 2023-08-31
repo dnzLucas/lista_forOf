@@ -4,11 +4,13 @@
     //Considere a lista de nomes abaixo:
     // let listaDeNomes = ["Amanda", "Eduardo", "Fábio", "Evelin", "César", "José", "Ivo", "Eva", "Otávio", "Inez", "Osmar", "Ulisses"];
     //Identifique os nomes que começam com qualquer vogal (A, E, I, O, U) e apresente os nomes em ordem alfabética.
-
-    //ENTRADA
-
+    let listaDeNomes = ["Amanda", "Eduardo", "Fábio", "Evelin", "César", "José", "Ivo", "Eva", "Otávio", "Inez", "Osmar", "Ulisses"];
     //PROCESSAMENTO
-
-    //SAÍDA
-
+    const nomecomV = []
+    const V = ["A", "E", "I", "O", "U"];
+    for (const nome of listaDeNomes){
+        (V.includes(nome[0])) ? nomecomV.push(nome) : document.write("")
+        }
+    
+    document.write(`Os nome em ordem alfabetica são: ${nomecomV.sort().join(", ")}`);
 </script>
