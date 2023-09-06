@@ -10,10 +10,16 @@
     let listaDeItens = [1, "João", "Eduardo", "Joice", 3, 5, 6, 8, "Maria", 5.6, 10];
 
     //PROCESSAMENTO
+    let pares = []
 
-    for (item of listaDeItens) {
-        (item % 2 == 0) ? par.push(item) : impar.push(item)
+    for (num of listaDeItens) {
+        if(num % 2 == 0){
+            pares.push(num)
+        }
+
     }
+
+    document.write(`Os números pares são: ${pares} <br> A quantidade de números são: ${pares.length} <br> A lista original tinha ${listaDeItens.length} elementos`)
 
 
     //SAÍDA

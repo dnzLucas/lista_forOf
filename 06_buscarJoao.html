@@ -8,6 +8,17 @@
     //ENTRADA
 
     let listaDeNomes = ["João Pedro", "Gabriel José", "Ulisses Joao", "Pedro Henrique", "João da Silva", "João Henrique", "Alisson João"];
+    let joaos = [];
+
+    for (let nomes of listaDeNomes) {
+        if(nomes.toUpperCase().includes("JOÃO")){
+        joaos.push(nomes)
+
+        }
+
+    }
+
+    document.write(`${joaos.sort().join((", "))} pedro`)
 
     //PROCESSAMENTO
     
