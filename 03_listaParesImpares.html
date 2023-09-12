@@ -1,25 +1,36 @@
-<meta charset="UTF-8">
+<meta charset="UTF-8" />
 <script>
-    //PROBLEMA
-    //Considere a lista de números abaixo:
-    // let listaDeNumeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-    //Separe os números pares e os números ímpares em listas distintas e apresente as listas de forma crescente e forma descrescente.
+  //PROBLEMA
+  //Considere a lista de números abaixo:
+  // let listaDeNumeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  //Separe os números pares e os números ímpares em listas distintas e apresente as listas de forma crescente e forma descrescente.
 
-    //ENTRADA
+  //ENTRADA
 
-    let listaDeNumeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];    
+  let listaDeNumeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-    //PROCESSAMENTO
+  //PROCESSAMENTO
 
-    let par = []
-    let impar = []
+  let par = [];
+  let impar = [];
 
-    for (item of listaDeNumeros) {
-        (item % 2 == 0) ? par.push(item) : impar.push(item)
-    }
+  for (item of listaDeNumeros) {
+    item % 2 == 0 ? par.push(item) : impar.push(item);
+  }
 
-    document.write(`Pares: ${par.join(", ")} <br> Ímpares: ${impar.join(", ")}`)
+  document.write(
+    `Pares (Crescente): ${par
+      .sort(function (a, b) {
+        return a - b;
+      })
+      .join(
+        ", "
+      )} <br> Pares (Decrescente) ${par.reverse()} <br> Ímpares (Crescente) :       ${impar
+      .sort(function (a, b) {
+        return a - b;
+      })
+      .join(", ")} <br> Impares (Decrescente): ${impar.reverse()}`
+  );
 
-    //SAÍDA
-
+  //SAÍDA
 </script>
