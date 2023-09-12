@@ -13,8 +13,14 @@
 
     let intEpos = [];
 
-
-
+    for (let num of listaDeNumeros) {
+        if(num > 0 && Number.isInteger(num)){
+            intEpos.push(num)
+        }
+        
+    }
+    
+    document.write(`Os números INTEIROS e POSITIVOS são: ${intEpos}. <br> Foram localizados ${intEpos.length} números.`)
 
 
     //SAÍDA
